@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SRITHAR – Java Full Stack Developer Portfolio. Experienced in Core Java, Spring Boot, Hibernate, HTML5, CSS3, JavaScript, and SQL." />
+  <meta name="keywords" content="SRITHAR, Java Developer, Full Stack Developer, Spring Boot, Portfolio" />
+  <meta name="author" content="SRITHAR" />
+  <title>SRITHAR | Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SRITHAR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#training" class="nav-link">Training</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="name-hello">Hello, I'm</span>
+        <span class="name-main">SRITHAR</span>
+      </h1>
+      <div class="hero-title">
+        <span class="title-prefix">I'm a </span>
+        <span class="typing-text" id="typing-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Java Full Stack Developer with hands-on experience in Core Java, JDBC, Servlets, JSP, Hibernate, Spring, SQL, HTML5, CSS3, and JavaScript. Passionate about clean code and enterprise-grade Java/JEE development.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+          Get In Touch
+        </a>
+        <a href="#projects" class="btn btn-outline" id="hero-projects-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/></svg>
+          View Projects
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:sritharcontact@gmail.com" class="social-link" id="hero-email" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/srithar05" target="_blank" class="social-link" id="hero-linkedin" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+        </a>
+        <a href="tel:9942902181" class="social-link" id="hero-phone" title="Phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who <span class="gradient-text">I Am</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar reveal">
+          <div class="avatar-frame">
+            <div class="avatar-placeholder">
+              <img src="./Images/profile.jpg" alt="SRITHAR" class="avatar-photo" />
+            </div>
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <h3 class="about-heading">Java Full Stack Developer</h3>
+          <p class="about-text">
+            I'm <strong>SRITHAR</strong>, a passionate Java Full Stack Developer with hands-on experience in building enterprise-grade web applications. I specialize in Core Java, JDBC, Servlets, JSP, Hibernate, and Spring Framework on the backend, combined with HTML5, CSS3, and JavaScript on the frontend.
+          </p>
+          <p class="about-text">
+            I'm passionate about writing clean, scalable code and continuously improving my skills. Currently, I'm deepening my expertise through a Master Java Full Stack Training program at QSpiders, Velachery, focusing on real-world deployment-ready applications.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+              <a href="mailto:sritharcontact@gmail.com" id="about-email">sritharcontact@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+              <a href="tel:9942902181" id="about-phone">+91 9942902181</a>
+            </div>
+            <div class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+              <a href="https://linkedin.com/in/srithar05" target="_blank" id="about-linkedin">linkedin.com/in/srithar05</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal" id="skill-java">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon java-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5z"/></svg>
+            </div>
+            <h3>Java / JEE Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Core Java</span>
+            <span class="skill-tag">JDBC</span>
+            <span class="skill-tag">Servlets</span>
+            <span class="skill-tag">JSP</span>
+            <span class="skill-tag">Java EE</span>
+            <span class="skill-tag">Hibernate</span>
+            <span class="skill-tag">Spring Framework</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Core Java</span>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Spring Framework</span>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Hibernate / JPA</span>
+              <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal" id="skill-web">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon web-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.491zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/></svg>
+            </div>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">DOM Manipulation</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>HTML5 / CSS3</span>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>JavaScript</span>
+              <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Responsive Design</span>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal" id="skill-framework">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon fw-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.999.999 0 0 0 1.414 0l1.586-1.586a.999.999 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/></svg>
+            </div>
+            <h3>Frameworks & Architecture</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MVC Architecture</span>
+            <span class="skill-tag">Spring IoC</span>
+            <span class="skill-tag">Dependency Injection</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Spring Boot</span>
+              <div class="bar-track"><div class="bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>MVC Architecture</span>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>REST API Design</span>
+              <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal" id="skill-db">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon db-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/></svg>
+            </div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Plus</span>
+            <span class="skill-tag">Relational DB Design</span>
+            <span class="skill-tag">Hibernate ORM</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>MySQL / SQL</span>
+              <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Database Design</span>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal" id="skill-tools">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon tools-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z"/></svg>
+            </div>
+            <h3>Tools & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">Eclipse</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal" id="exp-tansam">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">
+                <div class="company-logo tansam-logo">T</div>
+                <div>
+                  <h3 class="company-name">TANSAM</h3>
+                  <p class="company-role">Full Stack Developer Intern</p>
+                  <p class="company-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                    Chennai
+                  </p>
+                </div>
+              </div>
+              <span class="timeline-date">Jul 2024 – Aug 2024</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Designed and developed full stack web applications using Java, HTML5, CSS3, JavaScript, and SQL.</li>
+              <li>Participated in application testing, debugging, and performance optimization cycles.</li>
+              <li>Gained hands-on exposure to enterprise application workflows and end-to-end development lifecycle.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Java</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="exp-codebind">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">
+                <div class="company-logo codebind-logo">CB</div>
+                <div>
+                  <h3 class="company-name">CodeBind Technologies</h3>
+                  <p class="company-role">Web Developer Intern</p>
+                  <p class="company-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                    Coimbatore
+                  </p>
+                </div>
+              </div>
+              <span class="timeline-date">Mar 2025 – Apr 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed and maintained web modules for a Herbal Homemade Products website using MVC-based architecture.</li>
+              <li>Integrated frontend components with backend services and relational SQL databases.</li>
+              <li>Used Git and GitHub for collaborative version control and code management.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>MVC</span><span>SQL</span><span>Git</span><span>GitHub</span><span>Frontend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal" id="proj-swiggy">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M2 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H2zm6 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm.5-4.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5zm2-.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2.5.5a.5.5 0 0 1 .5-.5h.5a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"/></svg>
+            </div>
+            <div class="project-number">01</div>
+          </div>
+          <h3 class="project-title">Swiggy Website Clone</h3>
+          <p class="project-desc">
+            A fully responsive Swiggy clone built from scratch with complete frontend design and Spring Boot REST APIs for user login, restaurant menu, and order placement with dynamic data rendering.
+          </p>
+          <ul class="project-features">
+            <li>Fully responsive across mobile, tablet, and desktop using Flexbox & media queries</li>
+            <li>Spring Boot REST APIs integrated directly with the frontend</li>
+            <li>MySQL tables (User, Restaurant, Menu, Order) with Hibernate ORM entity relationships</li>
+          </ul>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span><span>Hibernate ORM</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-ecommerce">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+            </div>
+            <div class="project-number">02</div>
+          </div>
+          <h3 class="project-title">E-Commerce Web Application</h3>
+          <p class="project-desc">
+            A responsive e-commerce website featuring product listing, navigation bar, and cart UI working seamlessly across all screen sizes with modular code structure.
+          </p>
+          <ul class="project-features">
+            <li>Product listing page with filtering and navigation bar</li>
+            <li>Cart UI responsive across different screen sizes</li>
+            <li>Modular code structure with separate feature components</li>
+          </ul>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-qrcode">
+          <a href="https://qrcode-generator-qrforge.vercel.app/" class="qr-project">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M2 2h2v2H2V2zm0 5h2v2H2V7zm0 5h2v2H2v-2zm5-10h2v2H7V2zm0 5h2v2H7V7zm0 5h2v2H7v-2zm5-10h2v2h-2V2zm0 5h2v2h-2V7zm0 5h2v2h-2v-2z"/><path d="M0 0h6v6H0V0zm1 1v4h4V1H1zm2 1h2v2H3V2zM0 10h6v6H0v-6zm1 1v4h4v-4H1zm2 1h2v2H3v-2zM10 0h6v6h-6V0zm1 1v4h4V1h-4zm2 1h2v2h-2V2z"/></svg>
+            </div>
+            <div class="project-number">03</div>
+          </div>
+          <h3 class="project-title">QR Code Generator</h3>
+          <p class="project-desc">
+            A versatile QR Code Generator web application that instantly creates scannable QR codes from text, URLs, phone numbers, or email addresses — built using Python's antigravity-inspired approach with a clean, interactive UI.
+          </p>
+          <ul class="project-features">
+            <li>Supports multiple input types: Text, URL, Phone Number, and Email</li>
+            <li>Instant QR code generation with real-time preview and download option</li>
+            <li>Clean, minimal UI with input validation and error handling</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>QR Library</span>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAINING SECTION ===== -->
+  <section class="section training-section" id="training">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Learning</span>
+        <h2 class="section-title"><span class="gradient-text">Training</span></h2>
+      </div>
+      <div class="training-card reveal" id="training-qspiders">
+        <div class="training-badge">Completed</div>
+        <div class="training-inner">
+          <div class="training-icon-wrap">
+            <div class="training-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16"><path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 2.5C6.067 5.5 5 6.567 5 8v3.5a.5.5 0 0 0 .5.5h1v3a.5.5 0 0 0 1 0v-3h1v3a.5.5 0 0 0 1 0v-3h1a.5.5 0 0 0 .5-.5V8c0-1.433-1.067-2.5-2.5-2.5H8z"/></svg>
+            </div>
+          </div>
+          <div class="training-content">
+            <div class="training-header-info">
+              <h3>Master Java Full Stack Training</h3>
+              <span class="training-date">Jul 2025 – May 2026</span>
+            </div>
+            <p class="training-org">QSpiders, Velachery · Full Stack Development Program</p>
+            <ul class="training-points">
+              <li>Comprehensive training in Core Java, JDBC, Servlets, JSP, SQL, HTML5, CSS3, and JavaScript.</li>
+              <li>Learning Spring Framework fundamentals including dependency injection, IoC, and enterprise application design.</li>
+              <li>Building deployment-ready applications simulating real-world full stack development scenarios.</li>
+            </ul>
+            <div class="training-techs">
+              <span>Core Java</span><span>JDBC</span><span>Servlets</span><span>JSP</span><span>Spring Boot</span><span>SQL</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal" id="edu-college">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/></svg>
+          </div>
+          <div class="edu-content">
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p class="edu-institution">Annai Vailankanni College of Engineering</p>
+            <span class="edu-year">2021 – 2025</span>
+          </div>
+          <div class="edu-level">Degree</div>
+        </div>
+
+        <div class="edu-card reveal" id="edu-school">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/></svg>
+          </div>
+          <div class="edu-content">
+            <h3>Higher Secondary Education (6th – 12th)</h3>
+            <p class="edu-institution">St. Mary's Hr. Sec. School</p>
+            <span class="edu-year">2014 – 2021</span>
+          </div>
+          <div class="edu-level">School</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section certifications-section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal" id="cert-novitech" onclick="openCertModal('./Images/cert_novitech.jpg', '30 Days Full Stack Development MasterClass – NoviTech R&D Pvt. Ltd')" style="cursor:pointer;" title="Click to view certificate">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3>30 Days Full Stack Development MasterClass</h3>
+            <p class="cert-issuer">NoviTech R&D Pvt. Ltd</p>
+            <div class="cert-type">Full Stack Development</div>
+          </div>
+          <div class="cert-view-hint">🔍 Click to view</div>
+        </div>
+
+        <div class="cert-card reveal" id="cert-codebind" onclick="openCertModal('./Images/cert_codebind.jpg', 'Inplant Training – Web Development – CodeBind Technologies')" style="cursor:pointer;" title="Click to view certificate">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.999.999 0 0 0 1.414 0l1.586-1.586a.999.999 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3>One Month Inplant Training – Web Development</h3>
+            <p class="cert-issuer">CodeBind Technologies</p>
+            <div class="cert-type">Web Development</div>
+          </div>
+          <div class="cert-view-hint">🔍 Click to view</div>
+        </div>
+
+        <div class="cert-card reveal" id="cert-infosys" onclick="openCertModal('./Images/cert_html.png', 'HTML5: The Language – Infosys Springboard')" style="cursor:pointer;" title="Click to view certificate">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3>HTML5: The Language</h3>
+            <p class="cert-issuer">Infosys Springboard</p>
+            <div class="cert-type">Frontend Development</div>
+          </div>
+          <div class="cert-view-hint">🔍 Click to view</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATE MODAL ===== -->
+  <div class="cert-modal-overlay" id="cert-modal-overlay" onclick="closeCertModal()">
+    <div class="cert-modal-box" onclick="event.stopPropagation()">
+      <button class="cert-modal-close" onclick="closeCertModal()">✕</button>
+      <p class="cert-modal-title" id="cert-modal-title"></p>
+      <img src="" alt="Certificate" class="cert-modal-img" id="cert-modal-img" />
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Work Together</h3>
+          <p>I'm actively looking for full-stack developer opportunities. Whether you have a project, an internship, or just want to say hi, feel free to reach out!</p>
+          <div class="contact-methods">
+            <a href="mailto:sritharcontact@gmail.com" class="contact-method" id="contact-email-link">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+              </div>
+              <div>
+                <span class="method-label">Email</span>
+                <span class="method-value">sritharcontact@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:9942902181" class="contact-method" id="contact-phone-link">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+              </div>
+              <div>
+                <span class="method-label">Phone</span>
+                <span class="method-value">+91 9942902181</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/srithar05" target="_blank" class="contact-method" id="contact-linkedin-link">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+              </div>
+              <div>
+                <span class="method-label">LinkedIn</span>
+                <span class="method-value">linkedin.com/in/srithar05</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" name="subject" placeholder="Job Opportunity / Project" required />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/></svg>
+              Send Message
+            </button>
+            <div class="form-note" id="form-success" style="display:none;">
+              ✅ Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>SRITHAR<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">© 2026 SRITHAR · Java Full Stack Developer · Built with passion </p>
+        <div class="footer-socials">
+          <a href="mailto:sritharcontact@gmail.com" id="footer-email" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/srithar05" target="_blank" id="footer-linkedin" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="back-to-top" onclick="scrollToTop()" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
